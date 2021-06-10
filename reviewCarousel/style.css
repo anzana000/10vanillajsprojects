@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+
+.underline::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100px;
+  background-color: #0984e3;
+}
+.img-container {
+  height: 150px;
+  width: 150px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.img-container::after {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #0984e3;
+  border-radius: 50%;
+  color: #fff;
+  content: "\f10e";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(25%);
+  display: grid;
+  place-items: center;
+}
+
+.img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #0984e3;
+  border-radius: 50%;
+  position: absolute;
+  top: -2%;
+  right: -4%;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px 15px;
+  height: 400px;
+  width: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.author {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 5px 0;
+}
+
+.job {
+  color: #0984e3;
+  font-size: 14px;
+}
+
+.info {
+  margin: 5px 0;
+  font-size: small;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev-next {
+  border: none;
+  outline: none;
+  color: #0984e3;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.random-btn {
+  border: none;
+  outline: none;
+  border: 1px solid #0984e3;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 7px 0;
+  cursor: pointer;
+}
+
+.random-btn:hover {
+  background-color: #0984e3;
+  color: #fff;
+}

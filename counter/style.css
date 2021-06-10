@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.value {
+  font-size: 4rem;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border: 1px solid #303952;
+  padding: 5px 20px;
+  margin: 7px;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: small;
+}
+
+.btn:hover {
+  background-color: #303952;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    width: 150px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
